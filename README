@@ -1,0 +1,38 @@
+This is a personal money management system. And I hope it can be more than a money/transaction/purchasing record website.
+The basic objective is allow you to record and track your accounting online. The basic principle
+is SIMPLICITY and CONSISTENT.  SIMPLICTY implies that the whole website, regardless its profuse
+features or not, the core parts(accounts and money recording) should be really simple and
+obvious for users, and in addition, the 'professional' features should not be
+'professional'--the learning cost should be low enough for the naive users. This will be our
+first distinguishing point in contrast to other similar softwares/websites, e.g. GNUCash. The
+second principle is CONSISTENT, it has two meanings: 1. The users experience of the website
+should be CONSISTENT with(or at least 'feels like') with their old customs when they used pens
+and accounting record books to get everything done. 2. The user experience within the website
+should always be CONSISTENT. These two characteristics ensure the SIMPLICITY of the whole website.
+For the further effort, I hope it has such additional promising features showed below:
+ 1. Transaction Searching:
+  - Search base on the range of dates; [easy]
+  - Search base on the keywords of the titles of all the transactions; [middle]
+  - Search base on several keywords(merchants, markets etc.). [Hard]
+  - Full text search. [insane]
+ 2. Report Generating:
+  - Generate Reports about a user specified period's bank accounts/transaction activities in
+    text. [easy]
+  - Similar to the above one, but in GRAPH. [Hard]
+  - More sophistics data analysis. Such part will use NEWLISP to realize. [Insane]
+ 3. Comment and Rate each item/service has been purchased [Hard]
+ 4. Recommend which to buy or not to buy due the rates and comments items.[Hard]
+ 5. 'Cookbook': -- A very interesting part, it allows users to document their own cooking style.
+  - User can write down the materials required by a particular dish by typing or copying from
+    the website. Automatically process these data. [easy]
+  - Search by keywords of the name of a dish [middle]
+  - Search a name of a specific material, return all the dish that may contain that
+    material. [middle]
+  - Generate shopping list by dishes. [middle]
+ 6. Mobile Platform. [miracle, @mrseacow]: Email Service.
+ 7. Expand to a full feature shopping website: [Fucking INSANE!!!!!Crazy!!!]
+  - Compare and list all online shopping results base on its price. [Damn it]
+  - Trends of the stuffs you are interested in. [JESUS!!!]
+  - More. [I am dreaming..LOL~]
+
+
