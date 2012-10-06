@@ -14,4 +14,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+                       url(r'^shopping/', 'money.shopping.views.Shopping'),
+                       url(r'^(?P<path>.*)$', 'django.views.static.serve', {'document_root' : r'/home/wuyue/Projects/money'}),
 )
