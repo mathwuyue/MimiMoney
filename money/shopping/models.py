@@ -19,10 +19,12 @@ class ShoppingData(models.Model):
         )
     
     title = models.CharField(max_length=60)
-    shopping_type = models.CharField(max_length=12, choices=_SHOPPING_TYPE,default='OTHER')
+    price = models.FloatField()
+    currency = models.CharField(max_length=3, default='GBP')
+    shopping_type = models.CharField(max_length=12, choices=_SHOPPING_TYPE, default='OTHER')
+    paying_type = models.CharField(max_length=30, default='Cash')
     shop_name = models.CharField(max_length=16,blank=True)
     place = models.TextField(blank=True)
     date = models.DateField(auto_now=True,auto_now_add=True)
     description = models.TextField(blank=True)
     rank = models.IntegerField(blank=True)
-    

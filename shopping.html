@@ -20,10 +20,12 @@
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h5>
+		  输入商品		  
+                </h5>
+            </div>
             <div data-role="content">
-                <h3>
-                    输入商品
-                </h3>
                 <form id="new-item-form" action="shopping/" method="POST">
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup">
@@ -33,6 +35,58 @@
                             <input name="title" id="item-title" placeholder="输入商品名称" value="" type="text" />
                         </fieldset>
                     </div>
+		    <div class="ui-grid-a">
+		      <div class="ui-block-a">
+			<div data-role="fieldcontain">
+                          <fieldset data-role="controlgroup">
+                            <label for="item-price">
+			      价格
+                            </label>
+                            <input name="price" id="item-price" placeholder="输入价格" value="" type="text" />
+                          </fieldset>
+			</div>
+		      </div>
+		      <div class="ui-block-b">
+			<div data-role="fieldcontain">
+                          <label for="item-currency">
+			    币种			  
+                          </label>
+                          <select id="item-currency" name="currency">
+                            <option value="USD">
+                              USD
+                            </option>
+			    <option value="GBP">
+			      GBP
+			    </option>
+			    <option value="CNY">
+			      CNY
+			    </option>
+			    <option value="HKD">
+			      HKD
+			    </option>
+			    <option value="EUR">
+			      EUR
+			    </option>			      
+			  </select>
+			</div>
+		      </div>
+		    </div>
+		    <div data-role="fieldcontain">
+                      <label for="item-paying-type">
+			付费方式
+                      </label>
+                      <select id="item-paying-type" name="paying_type">
+                        <option value="DEBIT">
+                          debit card
+                        </option>
+			<option value="CREDIT">
+			  credit card
+			</option>
+			<option value="CASH">
+			  cash			      
+			</option>
+		      </select>
+		    </div>
                     <div data-role="fieldcontain">
                         <label for="item-type">
                             商品类别
@@ -75,7 +129,7 @@
                             <label for="item-shop-name">
                                 商店名称
                             </label>
-                            <input name="shopping_name" id="item-shop-name" placeholder="商店名称" value="" type="text" />
+                            <input name="shop_name" id="item-shop-name" placeholder="商店名称" value="" type="text" />
                         </fieldset>
                     </div>
                     <div data-role="fieldcontain">
@@ -83,20 +137,20 @@
                             评级
                         </label>
                         <select id="item-rank" name="rank">
-                            <option value="1">
-                                1
-                            </option>
-                            <option value="2">
-                                2
-                            </option>
-                            <option value="3">
-                                3
+                            <option value="5">
+                                5
                             </option>
                             <option value="4">
                                 4
                             </option>
-                            <option value="5">
-                                5
+                            <option value="3">
+                                3
+                            </option>
+                            <option value="2">
+                                2
+                            </option>
+                            <option value="1">
+                                1
                             </option>
                         </select>
                     </div>
