@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 
@@ -17,7 +19,9 @@ class ShoppingData(models.Model):
         ('RESTURANT', '餐馆吃饭'),
         ('OTHER', '其他')
         )
-    
+
+    user = models.ForeignKey(User, related_name='+')  
+
     title = models.CharField(max_length=60)
     price = models.FloatField()
     currency = models.CharField(max_length=3, default='GBP')
