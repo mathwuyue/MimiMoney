@@ -134,4 +134,4 @@ def login(req): #/accounts/login/
 def logout(req): # /accounts/logout/
     logout(req)
     # redirect to login
-    return HttpResponseRedirect('http://money.tinytractorlab.net/accounts/login/')
+    return HttpResponseRedirect('http://money.tinytractorlab.net/index.html')
