@@ -61,7 +61,7 @@
                     <div class="ui-block-b">{{ date }}
                     </div>
                 </div>
-                <a data-role="button" data-transition="slideup" data-theme="e" href="../index.html" data-icon="home" data-iconpos="left">
+                <a data-role="button" data-transition="slideup" data-theme="e" href="../main.html" data-icon="home" data-iconpos="left">
                     返回主页
                 </a>
             </div>
