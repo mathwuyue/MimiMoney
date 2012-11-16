@@ -28,31 +28,23 @@
                             登录
                         </h3>
                         <form id="login-form" action="login/" method="post" data-ajax="false">
-                            <div data-role="fieldcontain">
-                                <fieldset data-role="controlgroup">
+                            <div data-role="fieldcontain" class="ui-hide-label">
                                     <label for="login-username">
                                         用户名
                                     </label>
                                     <input name="username" id="login-username" placeholder="输入用户名" value="" type="email" />
-                                </fieldset>
                             </div>
-                            <div data-role="fieldcontain">
-                                <fieldset data-role="controlgroup">
+                            <div data-role="fieldcontain" class="ui-hide-label">
                                     <label for="login-password">
                                         密码
                                     </label>
                                     <input name="password" id="login-password" placeholder="输入密码" value="" type="password" />
-                                </fieldset>
                             </div>
                             <div id="is-saved" data-role="fieldcontain">
-                                <fieldset data-role="controlgroup" data-type="vertical">
-                                    <legend>
-                                    </legend>
-                                    <input id="checkbox1" name="is_saved" type="checkbox" />
-                                    <label for="checkbox1">
-                                        保持登录状态
-                                    </label>
-                                </fieldset>
+                              <input id="checkbox1" name="is_saved" type="checkbox" />
+                              <label for="checkbox1">
+                                保持登录状态
+                              </label>
                             </div>
                             <input id="login-submit-button" type="submit" data-theme="b" data-icon="star" data-iconpos="left" value="登录" />
                         </form>
@@ -62,47 +54,37 @@
                             注册
                         </h3>
                         <form id="create-user-form" action="users/" method="POST" data-ajax="false">
-                            <div data-role="fieldcontain">
-                                <fieldset data-role="controlgroup">
-                                    <label for="create-user-username">
-                                        用户名
-                                    </label>
-                                    <input name="username" id="create-user-username" placeholder="请用邮箱注册" value="" type="email" />
-                                </fieldset>
-                            </div>
-                            <div data-role="fieldcontain">
-                                <fieldset data-role="controlgroup">
-                                    <label for="create-user-password">
-                                        密码
-                                    </label>
-                                    <input name="password" id="create-user-password" placeholder="输入密码" value="" type="password" />
-                                </fieldset>
-                            </div>
-                            <div data-role="fieldcontain">
-                                <fieldset data-role="controlgroup">
-                                    <label for="create-user-password2">
-                                        确认密码
-                                    </label>
-                                    <input name="password2" id="create-user-password2" placeholder="再次输入密码" value="" type="password" />
-                                </fieldset>
-                            </div>
-                            <div data-role="fieldcontain">
-                                <fieldset data-role="controlgroup">
-                                    <label for="create-user-last-name">
-                                        姓
-                                    </label>
-                                    <input name="last_name" id="create-user-last-name" placeholder="Last Name" value="" type="text" />
-                                </fieldset>
-                            </div>
-                            <div data-role="fieldcontain">
-                              <fieldset data-role="controlgroup">
-                                <label for="create-user-first-name">
-                                  名
-                                </label>
-                                <input name="first_name" id="create-user-first-name" placeholder="First Name" value="" type="text" />
-                              </fieldset>
-                            </div>
-                            <input id="create-user-submit-button" type="submit" data-theme="b" data-icon="plus" data-iconpos="left" value="创建用户" />
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                            <label for="create-user-username">
+                              用户名
+                            </label>
+                            <input name="username" id="create-user-username" placeholder="请用邮箱注册" value="" type="email" />
+                          </div>
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                            <label for="create-user-password">
+                              密码
+                            </label>
+                            <input name="password" id="create-user-password" placeholder="输入密码" value="" type="password" />
+                          </div>
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                            <label for="create-user-password2">
+                              确认密码
+                            </label>
+                            <input name="password2" id="create-user-password2" placeholder="再次输入密码" value="" type="password" />
+                          </div>
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                            <label for="create-user-last-name">
+                              姓
+                            </label>
+                            <input name="last_name" id="create-user-last-name" placeholder="姓" value="" type="text" />
+                          </div>
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                              <label for="create-user-first-name">
+                                名
+                              </label>
+                              <input name="first_name" id="create-user-first-name" placeholder="名" value="" type="text" />
+                          </div>
+                          <input id="create-user-submit-button" type="submit" data-theme="b" data-icon="plus" data-iconpos="left" value="创建用户" />
                         </form>
                     </div>
                 </div>
