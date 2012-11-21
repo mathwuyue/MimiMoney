@@ -57,4 +57,5 @@ def userLogin(req):
 
 
 def userLogout(req):
-    logout(req, '../index.html')
+    logout(req)
+    return HttpResponse('success')

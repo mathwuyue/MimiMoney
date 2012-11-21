@@ -17,6 +17,7 @@ urlpatterns = patterns('',
                        url(r'^main/', 'main.views.main'),
                        url(r'^shopping/', 'shopping.views.shopping'),
                        url(r'^login/', 'account.views.userLogin'),
+                       url(r'^logout/', 'account.views.userLogout'),
                        url(r'^users/', 'account.views.createUser'),
                        url(r'^(?P<path>.*)$', 'django.views.static.serve', {'document_root' : r'/home/wuyue/Projects/money'}),
 )
