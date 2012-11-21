@@ -30,7 +30,7 @@ def createUser(req):
         user.save()
 
         req.session.set_expiry(0)
-        return HttpResponseRedirect('../main.html')  # return to user main page  
+        return HttpResponse('success')  # return to user main page  
 
 
 def userLogin(req):
@@ -41,18 +41,20 @@ def userLogin(req):
             is_saved = req.POST['is_saved']
         else:
             is_saved = '0'
-        if is_saved == '0':                    #check the actual value.
+        if is_saved == '0' or is_saved == 'off':                    #check the actual value.
             req.session.set_expiry(0)
+        else:
+            req.session.set_expiry(300000)
         user = authenticate(username = username, password = password)
         if user is not None:
             login(req, user)
             if req.GET.has_key('next'):
                 return HttpResponseRedirect(req.POST['next'])
             else:
-                return HttpResponseRedirect('../main.html') # return to user main page
+                return HttpResponse('success') # return to user main page
         else:
             return HttpResponse('failed')
 
 
-def logout(req):
-    return HttpResponseRedirect('../index.html')
+def userLogout(req):
+    logout(req, '../index.html')

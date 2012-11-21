@@ -5,7 +5,7 @@ $(function() {
 		$('#login-error').popup('open');
 		return true;
 	    }
-	    window.location.href = 'main.html';
+	    window.location.href = 'main/';
 	});
 	return false;
     });
@@ -20,7 +20,7 @@ $(function() {
 		    return true;
 		}
 
-		window.location.href = 'main.html';
+		window.location.href = 'main/';
 	    });
 
 	    return false;
