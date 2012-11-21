@@ -4,4 +4,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='../index.html')
 def main(req):
-    return render_to_response('main.djhtml',{})
+    return render_to_response('main.djhtml',{'host': req.get_host()})
