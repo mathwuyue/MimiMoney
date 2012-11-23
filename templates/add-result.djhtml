@@ -13,6 +13,9 @@
     <body>
         <div data-role="page" id="page1">
             <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="slideup" data-theme="e" href="http://{{ host }}/main/" data-icon="home" data-iconpos="left">
+                    返回主页
+                </a>
                 <h5>
                     增加的商品
                 </h5>
@@ -56,9 +59,6 @@
                     <div class="ui-block-b">{{ date }}
                     </div>
                 </div>
-                <a data-role="button" data-transition="slideup" data-theme="e" href="http://{{ host }}/main/" data-icon="home" data-iconpos="left">
-                    返回主页
-                </a>
             </div>
         </div>
         <script>
