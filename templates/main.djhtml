@@ -14,7 +14,7 @@
       <div data-role="page" id="main">
 	<div data-role="header" data-theme="a">
           <h3>主页</h3> 
-	  <a href="http://{{ host }}/index.html" data-role="button" data-transiion="fade" class="ui-btn-right">登出</a>  
+	  <a href="http://{{ host }}/index.html" data-role="button" data-transiion="fade" >登出</a>  
 	</div>
         <div data-role="content" style="background-image: url('http://{{ host }}/image/background.jpg');">
           <ul data-role="listview" data-divider-theme="e" data-inset="true">

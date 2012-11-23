@@ -20,7 +20,7 @@
             <h5>
 	      输入商品		  
             </h5>
-            <a id="item-submit" data-theme="b" data-transition="slidedown" data-role="button"/>
+            <a id="item-submit" data-theme="b" data-transition="slidedown" data-role="button" data-icon="check" data-iconpos="left">保存</a>
           </div>
           <div data-role="content">
             <form id="new-item-form" action="../shopping/" method="post" data-ajax="false">
